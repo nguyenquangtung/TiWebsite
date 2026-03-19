@@ -1,152 +1,350 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" itemscope itemtype="https://schema.org/LocalBusiness">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ PRIMARY SEO ═══ -->
   <title>Sửa Cửa Sắt – Cửa Kéo – Cửa Nhôm Tại Nhà | 0903614273</title>
-  <meta name="description" content="Dịch vụ sửa cửa sắt, cửa kéo, cửa nhôm tại nhà. Có mặt sau 30 phút. Báo giá rõ ràng. Bảo hành đầy đủ. Hotline: 0903614273" />
+  <meta name="description" content="Dịch vụ sửa cửa sắt, cửa kéo, cửa nhôm tại nhà TP.HCM. Có mặt sau 30 phút. Báo giá minh bạch. Bảo hành tận nơi. Gọi: 0903 614 273" />
+  <meta name="keywords"    content="sửa cửa sắt tại nhà, sửa cửa kéo, sửa cửa nhôm, thợ sửa cửa HCM, sửa cửa 24/7" />
+  <meta name="robots"      content="index, follow" />
+  <meta name="author"      content="Sửa Cửa Nhanh" />
+  <link rel="canonical"    href="" id="canonicalTag" />
+
+  <!-- ═══ OPEN GRAPH (Facebook / Zalo share) ═══ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Sửa Cửa Sắt – Cửa Kéo – Cửa Nhôm Tại Nhà | 0903614273" />
+  <meta property="og:description" content="Dịch vụ sửa cửa sắt, cửa kéo, cửa nhôm tại nhà TP.HCM. Có mặt sau 30 phút. Hotline: 0903 614 273" />
+  <meta property="og:image"       content="images/og-image.jpg" id="ogImage" />
+  <meta property="og:locale"      content="vi_VN" />
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Sửa Cửa Sắt – Cửa Kéo – Cửa Nhôm Tại Nhà | 0903614273" />
+  <meta name="twitter:description" content="Dịch vụ sửa cửa sắt, cửa kéo, cửa nhôm tại nhà TP.HCM. Có mặt sau 30 phút. Hotline: 0903 614 273" />
+  <meta name="twitter:image"       content="images/og-image.jpg" />
+
+  <!-- ═══ SCHEMA.ORG – Local Business (Google rich results) ═══ -->
+  <script type="application/ld+json" id="schemaLD">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Sửa Cửa Nhanh",
+    "description": "Dịch vụ sửa cửa sắt, cửa kéo, cửa nhôm tại nhà TP.HCM. Có mặt sau 30 phút.",
+    "telephone": "+840903614273",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "TP. Hồ Chí Minh",
+      "addressCountry": "VN"
+    },
+    "openingHours": "Mo-Su 00:00-23:59",
+    "priceRange": "$$",
+    "areaServed": "TP. Hồ Chí Minh",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- ═══ STYLES ═══ -->
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- ═══ CONFIG (load trước script.js) ═══ -->
+  <script src="config.js"></script>
 </head>
 <body>
-
-  <!-- STICKY HEADER -->
-  <header class="header" id="header">
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header" role="banner">
     <div class="container header-inner">
-      <div class="logo">
-        <span class="logo-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
-        <span class="logo-text">SỬA CỬA <span>NHANH</span></span>
-      </div>
-      <a href="tel:0903614273" class="btn btn-header">
-        <i class="fa-solid fa-phone-volume"></i> 0903 614 273
+      <a href="#hero" class="logo" aria-label="Trang chủ Sửa Cửa Nhanh" itemprop="name">
+        <span class="logo-icon" aria-hidden="true"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+        <div class="logo-text-wrap">
+          <span class="logo-text">CƠ KHÍ <strong>HAI TRUNG</strong></span>
+          <span class="logo-sub" id="js-tagline">Dịch vụ tại nhà TP.HCM</span>
+        </div>
+      </a>      <nav class="header-nav" role="navigation" aria-label="Menu chính">
+        <a href="#services">Dịch vụ</a>
+        <a href="#gallery">Công trình</a>
+        <a href="#why-us">Ưu điểm</a>
+        <a href="#promo" class="nav-promo-link"><i class="fa-solid fa-tag" aria-hidden="true"></i> Khuyến mãi</a>
+        <a href="#map">Bản đồ</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+      <a href="tel:0903614273" class="btn btn-header" id="js-header-phone" itemprop="telephone" aria-label="Gọi ngay">
+        <i class="fa-solid fa-phone-volume" aria-hidden="true"></i> <span id="js-header-phone-text">0903 614 273</span>
       </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Menu di động">      <a href="#services" class="mobile-nav-link">Dịch vụ</a>
+      <a href="#gallery" class="mobile-nav-link">Công trình</a>
+      <a href="#why-us" class="mobile-nav-link">Ưu điểm</a>
+      <a href="#promo" class="mobile-nav-link mobile-nav-promo"><i class="fa-solid fa-tag" aria-hidden="true"></i> Khuyến mãi</a>
+      <a href="#map" class="mobile-nav-link">Bản đồ</a>
+      <a href="#contact" class="mobile-nav-link">Liên hệ</a>
+      <a href="tel:0903614273" class="mobile-nav-call" id="js-mobile-phone">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i> Gọi: <span id="js-mobile-phone-text">0903 614 273</span>
+      </a>
+    </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <div class="badge-top">
-        <i class="fa-solid fa-bolt"></i> Có mặt sau 30 phút
-      </div>
-      <h1>🔧 Dịch Vụ Sửa Cửa Tại Nhà<br/><span>Gọi Là Có Mặt!</span></h1>
-      <p class="hero-sub">Sửa cửa sắt • Cửa kéo • Cửa nhôm<br/>Nhanh chóng – Uy tín – Bảo hành đầy đủ</p>
-      <div class="hero-actions">
-        <a href="tel:0903614273" class="btn btn-primary pulse">
-          <i class="fa-solid fa-phone-volume"></i> Gọi Ngay: 0903 614 273
-        </a>
-        <a href="https://zalo.me/0903614273" target="_blank" class="btn btn-zalo">
-          <i class="fa-brands fa-facebook-messenger"></i> Nhắn Tin Zalo
-        </a>
-      </div>
-      <div class="hero-trust">
-        <div class="trust-item"><i class="fa-solid fa-check-circle"></i> Miễn phí đến xem</div>
-        <div class="trust-item"><i class="fa-solid fa-check-circle"></i> Báo giá trước khi làm</div>
-        <div class="trust-item"><i class="fa-solid fa-check-circle"></i> Bảo hành tận nơi</div>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero" aria-label="Giới thiệu dịch vụ">
+    <div class="hero-bg-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-layout">
+      <div class="hero-left">        <div class="badge-top" aria-label="Thời gian phản hồi">
+          <i class="fa-solid fa-bolt" aria-hidden="true"></i> Có mặt sau <span id="js-response-time">30 phút</span>
+        </div>
+        <h1>Dịch Vụ Sửa Cửa<br/><span class="gradient-text">Tại Nhà – Gọi Là Có Mặt!</span></h1>
+        <p class="hero-sub">Sửa cửa sắt • Cửa kéo • Cửa nhôm<br/>Nhanh chóng – Uy tín – Bảo hành đầy đủ</p>
+        <div class="hero-trust">
+          <div class="trust-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Miễn phí đến xem</div>
+          <div class="trust-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Báo giá trước khi làm</div>
+          <div class="trust-item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Bảo hành tận nơi</div>
+        </div>
+        <div class="hero-actions">
+          <a href="tel:0903614273" id="js-hero-phone" class="btn btn-primary pulse" aria-label="Gọi ngay">
+            <i class="fa-solid fa-phone-volume" aria-hidden="true"></i> Gọi Ngay: <span id="js-hero-phone-text">0903 614 273</span>
+          </a>
+          <a href="https://zalo.me/0903614273" id="js-hero-zalo" target="_blank" rel="noopener" class="btn btn-outline-white">
+            <i class="fa-brands fa-rocketchat" aria-hidden="true"></i> Nhắn Tin Zalo
+          </a>
+        </div>
+        <div class="hero-social">
+          <span>Theo dõi:</span>
+          <a href="https://facebook.com/FANPAGE_CUA_BAN" id="js-hero-fb" target="_blank" rel="noopener" class="social-pill facebook" aria-label="Facebook Fanpage">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i> Facebook
+          </a>
+          <a href="https://tiktok.com/@TIKTOK_CUA_BAN" id="js-hero-tt" target="_blank" rel="noopener" class="social-pill tiktok" aria-label="TikTok Channel">
+            <i class="fa-brands fa-tiktok" aria-hidden="true"></i> TikTok
+          </a>
+        </div>
+      </div>      <div class="hero-right">
+        <div class="hero-img-main">
+            <img src="images/hero-main.jpg" alt="Thợ sửa cửa chuyên nghiệp Cơ Khí Hai Trung"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+            <div class="img-ph" style="display:none">
+              <i class="fa-solid fa-image"></i>
+              <span>Ảnh thợ thi công</span>
+            </div>
+            <div class="hero-img-badge"><i class="fa-solid fa-star"></i> 5 sao</div>
+          </div>
       </div>
     </div>
     <div class="hero-wave">
       <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8fafc"/></svg>
     </div>
   </section>
-
-  <!-- STATS BANNER -->
-  <section class="stats-banner">
-    <div class="container stats-grid">
-      <div class="stat-item">
-        <span class="stat-number">500+</span>
-        <span class="stat-label">Khách hàng hài lòng</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-number">30'</span>
-        <span class="stat-label">Có mặt tại nhà bạn</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-number">5+</span>
-        <span class="stat-label">Năm kinh nghiệm</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-number">24/7</span>
-        <span class="stat-label">Sẵn sàng phục vụ</span>
-      </div>
+  <!-- ===================== STATS ===================== -->
+  <section class="stats-banner" aria-label="Thống kê dịch vụ">
+    <div class="container stats-grid" id="js-stats-grid">
+      <!-- Tự động render từ config.js → SITE_CONFIG.stats -->
     </div>
   </section>
 
-  <!-- SERVICES SECTION -->
-  <section class="services" id="services">
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services" id="services" aria-labelledby="services-title">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Dịch vụ của chúng tôi</span>
-        <h2>Chuyên Sửa Tất Cả Loại Cửa</h2>
+        <span class="section-tag"><i class="fa-solid fa-wrench" aria-hidden="true"></i> Dịch vụ của chúng tôi</span>
+        <h2 id="services-title">Chuyên Sửa Tất Cả Loại Cửa</h2>
         <p>Đội ngũ thợ lành nghề, trang thiết bị chuyên dụng, xử lý nhanh chóng mọi sự cố</p>
       </div>
       <div class="services-grid">
 
-        <div class="service-card">
-          <div class="service-icon" style="background: linear-gradient(135deg,#ff6b35,#f7c59f)">
-            <i class="fa-solid fa-door-closed"></i>
+        <article class="service-card">
+          <div class="service-img">
+            <img src="images/service-sat.jpg" alt="Sửa cửa sắt tại nhà TP.HCM"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+            <div class="svc-ph" style="display:none; background:linear-gradient(135deg,#ff6b35,#e84118)">
+              <i class="fa-solid fa-door-closed" aria-hidden="true"></i><span>service-sat.jpg</span>
+            </div>
+            <div class="service-img-overlay" aria-hidden="true">
+              <a href="tel:0903614273" class="btn btn-overlay js-phone-link">Gọi Tư Vấn</a>
+            </div>
           </div>
-          <h3>Cửa Sắt</h3>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Sửa cửa sắt bị kẹt, cong vênh</li>
-            <li><i class="fa-solid fa-check"></i> Hàn, gia cố khung cửa sắt</li>
-            <li><i class="fa-solid fa-check"></i> Thay bản lề, khóa cửa sắt</li>
-            <li><i class="fa-solid fa-check"></i> Sơn lại cửa sắt bị rỉ sét</li>
-          </ul>
-          <a href="tel:0903614273" class="btn btn-service">Gọi Tư Vấn</a>
+          <div class="service-body">
+            <div class="service-icon-sm" style="background:linear-gradient(135deg,#ff6b35,#e84118)" aria-hidden="true">
+              <i class="fa-solid fa-door-closed"></i>
+            </div>
+            <h3>Cửa Sắt</h3>
+            <ul>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Sửa cửa sắt bị kẹt, cong vênh</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Hàn, gia cố khung cửa sắt</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Thay bản lề, khóa cửa sắt</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Sơn lại cửa sắt bị rỉ sét</li>
+            </ul>
+            <a href="tel:0903614273" class="btn btn-service js-phone-link">Gọi Tư Vấn Ngay</a>
+          </div>
         </div>
 
         <div class="service-card featured">
-          <div class="featured-badge">Phổ Biến</div>
-          <div class="service-icon" style="background: linear-gradient(135deg,#667eea,#764ba2)">
-            <i class="fa-solid fa-arrows-left-right"></i>
+          <div class="featured-badge"><i class="fa-solid fa-fire"></i> Phổ Biến</div>          <div class="service-img">
+            <img src="images/service-keo.jpg" alt="Sửa cửa kéo tại nhà TP.HCM"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+            <div class="svc-ph" style="display:none; background:linear-gradient(135deg,#667eea,#764ba2)">
+              <i class="fa-solid fa-arrows-left-right"></i><span>service-keo.jpg</span>
+            </div>
+            <div class="service-img-overlay">
+              <a href="tel:0903614273" class="btn btn-overlay">Gọi Tư Vấn</a>
+            </div>
           </div>
-          <h3>Cửa Kéo</h3>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Sửa cửa kéo bị trật ray</li>
-            <li><i class="fa-solid fa-check"></i> Thay bánh xe, ray cửa kéo</li>
-            <li><i class="fa-solid fa-check"></i> Sửa động cơ cửa kéo tự động</li>
-            <li><i class="fa-solid fa-check"></i> Điều chỉnh cửa kéo đóng mở êm</li>
-          </ul>
-          <a href="tel:0903614273" class="btn btn-service">Gọi Tư Vấn</a>
+          <div class="service-body">
+            <div class="service-icon-sm" style="background:linear-gradient(135deg,#667eea,#764ba2)">
+              <i class="fa-solid fa-arrows-left-right"></i>
+            </div>
+            <h3>Cửa Kéo</h3>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Sửa cửa kéo bị trật ray</li>
+              <li><i class="fa-solid fa-check"></i> Thay bánh xe, ray cửa kéo</li>
+              <li><i class="fa-solid fa-check"></i> Sửa động cơ cửa kéo tự động</li>
+              <li><i class="fa-solid fa-check"></i> Điều chỉnh cửa kéo đóng mở êm</li>
+            </ul>
+            <a href="tel:0903614273" class="btn btn-service">Gọi Tư Vấn Ngay</a>
+          </div>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon" style="background: linear-gradient(135deg,#11998e,#38ef7d)">
-            <i class="fa-solid fa-window-maximize"></i>
+        <div class="service-card">          <div class="service-img">
+            <img src="images/service-nhom.jpg" alt="Sửa cửa nhôm tại nhà TP.HCM"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+            <div class="svc-ph" style="display:none; background:linear-gradient(135deg,#11998e,#38ef7d)">
+              <i class="fa-solid fa-window-maximize"></i><span>service-nhom.jpg</span>
+            </div>
+            <div class="service-img-overlay">
+              <a href="tel:0903614273" class="btn btn-overlay">Gọi Tư Vấn</a>
+            </div>
           </div>
-          <h3>Cửa Nhôm</h3>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Sửa cửa nhôm bị lỏng, kẹt</li>
-            <li><i class="fa-solid fa-check"></i> Thay gioăng cao su, ron cửa</li>
-            <li><i class="fa-solid fa-check"></i> Thay kính cửa nhôm bị vỡ</li>
-            <li><i class="fa-solid fa-check"></i> Sửa khóa, tay nắm cửa nhôm</li>
-          </ul>
-          <a href="tel:0903614273" class="btn btn-service">Gọi Tư Vấn</a>
-        </div>
+          <div class="service-body">
+            <div class="service-icon-sm" style="background:linear-gradient(135deg,#11998e,#38ef7d)">
+              <i class="fa-solid fa-window-maximize"></i>
+            </div>
+            <h3>Cửa Nhôm</h3>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Sửa cửa nhôm bị lỏng, kẹt</li>
+              <li><i class="fa-solid fa-check"></i> Thay gioăng cao su, ron cửa</li>
+              <li><i class="fa-solid fa-check"></i> Thay kính cửa nhôm bị vỡ</li>
+              <li><i class="fa-solid fa-check"></i> Sửa khóa, tay nắm cửa nhôm</li>
+            </ul>        <a href="tel:0903614273" class="btn btn-service js-phone-link">Gọi Tư Vấn Ngay</a>
+          </div>
+        </article>
 
       </div>
     </div>
   </section>
 
-  <!-- WHY CHOOSE US -->
-  <section class="why-us">
+  <!-- ===================== GALLERY ===================== -->
+  <section class="gallery" id="gallery" aria-labelledby="gallery-title">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Vì sao chọn chúng tôi?</span>
-        <h2>Cam Kết Chất Lượng Tuyệt Đối</h2>
+        <span class="section-tag"><i class="fa-solid fa-images" aria-hidden="true"></i> Hình ảnh thực tế</span>        <h2 id="gallery-title">Công Trình Đã Thi Công</h2>
+        <p>Hình ảnh thực tế từ các công trình của Cơ Khí Hai Trung tại TP.HCM</p>
+      </div>
+      <div class="gallery-tabs" role="tablist" aria-label="Lọc theo loại cửa">
+        <button class="gallery-tab active" data-filter="all" role="tab" aria-selected="true">Tất cả</button>
+        <button class="gallery-tab" data-filter="sat" role="tab" aria-selected="false">Cửa Sắt</button>
+        <button class="gallery-tab" data-filter="keo" role="tab" aria-selected="false">Cửa Kéo</button>
+        <button class="gallery-tab" data-filter="nhom" role="tab" aria-selected="false">Cửa Nhôm</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid" role="list">
+        <div class="gallery-item" role="listitem" data-category="sat" data-caption="Công trình thực tế – Cơ Khí Hai Trung">
+          <img src="images/hero-thumb1.jpg" alt="Công trình sửa cửa thực tế – Cơ Khí Hai Trung"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy"/>
+          <div class="gal-ph" style="display:none"><i class="fa-solid fa-door-closed" aria-hidden="true"></i></div>
+          <div class="gallery-overlay" aria-hidden="true"><i class="fa-solid fa-expand"></i><p>Công trình thực tế</p></div>
+        </div>
+        <div class="gallery-item" role="listitem" data-category="keo" data-caption="Sửa cửa kéo tại nhà">
+          <img src="images/hero-thumb2.jpg" alt="Sửa cửa kéo tại nhà – Cơ Khí Hai Trung TP.HCM"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy"/>
+          <div class="gal-ph" style="display:none"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i></div>
+          <div class="gallery-overlay" aria-hidden="true"><i class="fa-solid fa-expand"></i><p>Sửa cửa kéo tại nhà</p></div>
+        </div>
+        <div class="gallery-item" role="listitem" data-category="nhom" data-caption="Sửa cửa nhôm tại nhà">
+          <img src="images/hero-thumb3.jpg" alt="Sửa cửa nhôm tại nhà – Cơ Khí Hai Trung TP.HCM"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy"/>
+          <div class="gal-ph" style="display:none"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i></div>
+          <div class="gallery-overlay" aria-hidden="true"><i class="fa-solid fa-expand"></i><p>Sửa cửa nhôm tại nhà</p></div>
+        </div>
+        <div class="gallery-item" role="listitem" data-category="sat" data-caption="Cửa sắt – Trước &amp; Sau sửa">
+          <img src="images/gallery-sat-1.jpg" alt="Sửa cửa sắt tại nhà – Cơ Khí Hai Trung TP.HCM"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy"/>
+          <div class="gal-ph" style="display:none"><i class="fa-solid fa-door-closed" aria-hidden="true"></i></div>
+          <div class="gallery-overlay" aria-hidden="true"><i class="fa-solid fa-expand"></i><p>Cửa sắt – Trước &amp; Sau</p></div>
+        </div>
+        <div class="gallery-item" role="listitem" data-category="keo" data-caption="Cửa kéo – Thay bánh xe ray cửa">
+          <img src="images/gallery-keo-1.jpg" alt="Sửa cửa kéo – Thay bánh xe ray cửa tại TP.HCM"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy"/>
+          <div class="gal-ph" style="display:none"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i></div>
+          <div class="gallery-overlay" aria-hidden="true"><i class="fa-solid fa-expand"></i><p>Cửa kéo – Thay bánh xe</p></div>
+        </div>
+        <div class="gallery-item" role="listitem" data-category="nhom" data-caption="Cửa nhôm – Thay kính cường lực">
+          <img src="images/gallery-nhom-1.jpg" alt="Sửa cửa nhôm – Thay kính cường lực tại TP.HCM"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy"/>
+          <div class="gal-ph" style="display:none"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i></div>
+          <div class="gallery-overlay" aria-hidden="true"><i class="fa-solid fa-expand"></i><p>Cửa nhôm – Thay kính</p></div>
+        </div>
+        <div class="gallery-item gallery-item-wide" role="listitem" data-category="sat" data-caption="Hàn gia cố khung cửa sắt chắc chắn">
+          <img src="images/gallery-sat-2.jpg" alt="Hàn gia cố khung cửa sắt – Cơ Khí Hai Trung"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy"/>
+          <div class="gal-ph" style="display:none"><i class="fa-solid fa-door-closed" aria-hidden="true"></i></div>
+          <div class="gallery-overlay" aria-hidden="true"><i class="fa-solid fa-expand"></i><p>Hàn gia cố khung cửa sắt</p></div>
+        </div>
+        <div class="gallery-item" role="listitem" data-category="keo" data-caption="Sửa cửa kéo tự động – Thay motor">
+          <img src="images/gallery-keo-2.jpg" alt="Sửa cửa kéo tự động – Thay motor tại nhà"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy"/>
+          <div class="gal-ph" style="display:none"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i></div>
+          <div class="gallery-overlay" aria-hidden="true"><i class="fa-solid fa-expand"></i><p>Cửa kéo tự động</p></div>
+        </div>
+        <div class="gallery-item" role="listitem" data-category="nhom" data-caption="Cửa nhôm – Thay gioăng cao su chống thấm">
+          <img src="images/gallery-nhom-2.jpg" alt="Thay gioăng cao su cửa nhôm chống thấm"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy"/>
+          <div class="gal-ph" style="display:none"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i></div>
+          <div class="gallery-overlay" aria-hidden="true"><i class="fa-solid fa-expand"></i><p>Cửa nhôm – Thay gioăng</p></div>
+        </div>
+        <div class="gallery-item" role="listitem" data-category="sat" data-caption="Sơn chống rỉ sét cửa sắt">
+          <img src="images/gallery-sat-3.jpg" alt="Sơn chống rỉ sét cửa sắt – Cơ Khí Hai Trung"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy"/>
+          <div class="gal-ph" style="display:none"><i class="fa-solid fa-door-closed" aria-hidden="true"></i></div>
+          <div class="gallery-overlay" aria-hidden="true"><i class="fa-solid fa-expand"></i><p>Sơn chống rỉ cửa sắt</p></div>
+        </div>
+        <div class="gallery-item" role="listitem" data-category="nhom" data-caption="Cửa nhôm – Sửa khóa &amp; tay nắm">
+          <img src="images/gallery-nhom-3.jpg" alt="Sửa khóa tay nắm cửa nhôm tại TP.HCM"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" loading="lazy"/>
+          <div class="gal-ph" style="display:none"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i></div>
+          <div class="gallery-overlay" aria-hidden="true"><i class="fa-solid fa-expand"></i><p>Cửa nhôm – Sửa khóa</p></div>
+        </div>
+      </div>
+      <div class="gallery-cta">
+        <p>📱 Xem thêm hình ảnh công trình thực tế trên mạng xã hội của chúng tôi</p>
+        <div class="gallery-social-btns">
+          <a href="#" id="js-gallery-fb" target="_blank" rel="noopener" class="btn btn-fb">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i> Xem trên Facebook
+          </a>
+          <a href="#" id="js-gallery-tt" target="_blank" rel="noopener" class="btn btn-tt">
+            <i class="fa-brands fa-tiktok" aria-hidden="true"></i> Xem trên TikTok
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY US ===================== -->
+  <section class="why-us" id="why-us" aria-labelledby="whyus-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-trophy" aria-hidden="true"></i> Vì sao chọn chúng tôi?</span>
+        <h2 id="whyus-title">Cam Kết Chất Lượng Tuyệt Đối</h2>
       </div>
       <div class="why-grid">
         <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-rocket"></i></div>
+          <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-rocket"></i></div>
           <h4>Nhanh Chóng</h4>
           <p>Có mặt tại nhà bạn trong vòng <strong>30 phút</strong> sau khi nhận cuộc gọi</p>
         </div>
@@ -166,7 +364,7 @@
           <p>Đội ngũ thợ <strong>lành nghề, kinh nghiệm 5+ năm</strong>, tận tâm phục vụ</p>
         </div>
         <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-tools"></i></div>
+          <div class="why-icon"><i class="fa-solid fa-toolbox"></i></div>
           <h4>Dụng Cụ Chuyên Dụng</h4>
           <p>Trang bị đầy đủ <strong>máy móc, phụ kiện</strong> để xử lý mọi tình huống</p>
         </div>
@@ -179,135 +377,623 @@
     </div>
   </section>
 
-  <!-- PROCESS SECTION -->
+  <!-- ===================== PROCESS ===================== -->
   <section class="process">
     <div class="container">
       <div class="section-header light">
-        <span class="section-tag">Quy trình làm việc</span>
+        <span class="section-tag"><i class="fa-solid fa-list-check"></i> Quy trình làm việc</span>
         <h2>Chỉ 4 Bước Đơn Giản</h2>
       </div>
       <div class="process-steps">
         <div class="step">
           <div class="step-number">01</div>
-          <div class="step-content">
-            <h4><i class="fa-solid fa-phone"></i> Liên Hệ</h4>
-            <p>Gọi điện hoặc nhắn tin Zalo cho chúng tôi mô tả sự cố</p>
-          </div>
+          <div class="step-icon"><i class="fa-solid fa-phone"></i></div>
+          <h4>Liên Hệ</h4>
+          <p>Gọi điện hoặc nhắn tin Zalo mô tả sự cố</p>
         </div>
         <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
         <div class="step">
           <div class="step-number">02</div>
-          <div class="step-content">
-            <h4><i class="fa-solid fa-map-marker-alt"></i> Đến Xem</h4>
-            <p>Thợ có mặt trong 30 phút, kiểm tra trực tiếp tại nhà bạn</p>
-          </div>
+          <div class="step-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          <h4>Đến Xem</h4>
+          <p>Thợ có mặt trong 30 phút, kiểm tra trực tiếp</p>
         </div>
         <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
         <div class="step">
           <div class="step-number">03</div>
-          <div class="step-content">
-            <h4><i class="fa-solid fa-receipt"></i> Báo Giá</h4>
-            <p>Tư vấn và báo giá rõ ràng, bạn đồng ý thì mới tiến hành</p>
-          </div>
+          <div class="step-icon"><i class="fa-solid fa-receipt"></i></div>
+          <h4>Báo Giá</h4>
+          <p>Báo giá rõ ràng, đồng ý thì mới tiến hành</p>
         </div>
         <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
         <div class="step">
           <div class="step-number">04</div>
-          <div class="step-content">
-            <h4><i class="fa-solid fa-star"></i> Hoàn Thành</h4>
-            <p>Sửa chữa xong, bàn giao và bảo hành tận nơi cho bạn</p>
-          </div>
+          <div class="step-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h4>Hoàn Thành</h4>
+          <p>Bàn giao và bảo hành tận nơi cho bạn</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
+  <!-- ===================== SOCIAL MEDIA ===================== -->
+  <section class="social-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-hashtag"></i> Mạng xã hội</span>
+        <h2>Theo Dõi Chúng Tôi</h2>
+        <p>Xem video thi công, mẹo bảo dưỡng cửa và nhiều nội dung hữu ích mỗi ngày!</p>
+      </div>
+      <div class="social-cards">
+
+        <!-- FACEBOOK -->
+        <div class="social-card facebook-card">          <div class="social-card-header">
+            <div class="social-icon-wrap fb"><i class="fa-brands fa-facebook-f"></i></div>
+            <div>
+              <h3>Facebook Fanpage</h3>
+              <span id="js-sc-fb-name">@SuaCuaNhanh.CoKhiHaiTrung.HCM</span>
+            </div>
+          </div>
+          <div class="social-preview">
+            <img src="images/fb-preview.jpg" alt="Cơ Khí Hai Trung – Fanpage Facebook"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+            <div class="social-ph fb-ph" style="display:none">
+              <i class="fa-brands fa-facebook-f"></i><span>Ảnh bìa fanpage</span>
+            </div>
+          </div>
+          <div class="social-stats">
+            <div class="social-stat"><i class="fa-solid fa-thumbs-up"></i> 1,200+ Lượt thích</div>
+            <div class="social-stat"><i class="fa-solid fa-users"></i> 1,500+ Người theo dõi</div>
+          </div>
+          <p class="social-desc">Cập nhật công trình mới nhất, ưu đãi hấp dẫn và mẹo bảo dưỡng cửa mỗi ngày!</p>
+          <!-- ĐỔI: link fanpage thật -->          <a href="#" id="js-sc-fb" target="_blank" rel="noopener" class="btn btn-fb-full">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i> Ghé thăm Fanpage
+          </a>
+        </div>
+
+        <!-- TIKTOK -->
+        <div class="social-card tiktok-card">
+          <div class="social-card-header">
+            <div class="social-icon-wrap tt"><i class="fa-brands fa-tiktok"></i></div>
+            <div>
+              <h3>TikTok Channel</h3>
+              <span id="js-sc-tt-name">@suacuanhanh</span>
+            </div>
+          </div>
+          <div class="tiktok-thumbs">            <div class="tt-thumb">
+              <img src="images/tiktok-1.jpg" alt="Video TikTok – Sửa cửa thực tế" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+              <div class="tt-ph" style="display:none"><i class="fa-brands fa-tiktok"></i></div>
+              <div class="tt-play" aria-hidden="true"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="tt-thumb">
+              <img src="images/tiktok-2.jpg" alt="Video TikTok – Mẹo bảo dưỡng cửa" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+              <div class="tt-ph" style="display:none"><i class="fa-brands fa-tiktok"></i></div>
+              <div class="tt-play" aria-hidden="true"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="tt-thumb">
+              <img src="images/tiktok-3.jpg" alt="Video TikTok – Công trình hoàn thiện" loading="lazy"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+              <div class="tt-ph" style="display:none"><i class="fa-brands fa-tiktok"></i></div>
+              <div class="tt-play" aria-hidden="true"><i class="fa-solid fa-play"></i></div>
+            </div>
+          </div>
+          <div class="social-stats">
+            <div class="social-stat"><i class="fa-solid fa-heart"></i> 5,000+ Lượt thích</div>
+            <div class="social-stat"><i class="fa-solid fa-play"></i> 20,000+ Lượt xem</div>
+          </div>
+          <p class="social-desc">Video thực tế sửa cửa, mẹo hay và những ca khó được xử lý thần tốc!</p>
+          <a href="#" id="js-sc-tt" target="_blank" rel="noopener" class="btn btn-tt-full">
+            <i class="fa-brands fa-tiktok" aria-hidden="true"></i> Xem TikTok
+          </a>
+        </div>
+
+        <!-- ZALO -->
+        <div class="social-card zalo-card">
+          <div class="social-card-header">
+            <div class="social-icon-wrap zl"><i class="fa-brands fa-rocketchat"></i></div>
+            <div>
+              <h3>Zalo</h3>
+              <span id="js-sc-zalo-name">0903 614 273</span>
+            </div>
+          </div>          <div class="social-preview">
+            <img src="images/zalo-preview.jpg" alt="Cơ Khí Hai Trung – Zalo" loading="lazy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+            <div class="social-ph zl-ph" style="display:none">
+              <i class="fa-brands fa-rocketchat"></i><span>Ảnh Zalo</span>
+            </div>
+          </div>
+          <div class="social-stats">
+            <div class="social-stat"><i class="fa-solid fa-comment-dots"></i> Phản hồi trong 5 phút</div>
+            <div class="social-stat"><i class="fa-solid fa-clock"></i> Online 24/7</div>
+          </div>
+          <p class="social-desc">Nhắn tin Zalo, gửi ảnh mô tả sự cố và nhận báo giá ngay lập tức!</p>
+          <a href="#" id="js-sc-zalo" target="_blank" rel="noopener" class="btn btn-zalo-full">
+            <i class="fa-brands fa-rocketchat" aria-hidden="true"></i> Nhắn Tin Zalo Ngay
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===================== TESTIMONIALS ===================== -->
   <section class="testimonials">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Khách hàng nói gì?</span>
+        <span class="section-tag"><i class="fa-solid fa-star"></i> Khách hàng nói gì?</span>
         <h2>Hàng Trăm Khách Hàng Tin Tưởng</h2>
+        <p class="section-desc">Đánh giá thực tế từ khách hàng đã sử dụng dịch vụ của chúng tôi</p>
       </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          <p>"Gọi lúc 9 giờ tối, thợ đến trong 25 phút. Cửa kéo nhà tôi bị trật bánh xe, sửa xong trong 30 phút. Giá cả hợp lý, rất hài lòng!"</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar">NL</div>
-            <div>
-              <strong>Chị Nguyễn Lan</strong>
-              <span>Quận Bình Thạnh</span>
+
+      <!-- Rating summary bar -->
+      <div class="rating-summary">
+        <div class="rating-big">
+          <span class="rating-score">5.0</span>
+          <div>
+            <div class="stars-lg">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
+            <span class="rating-label">Đánh giá trung bình</span>
           </div>
         </div>
-        <div class="testimonial-card">
-          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          <p>"Cửa sắt nhà tôi bị rỉ sét và không đóng được. Thợ đến xem, báo giá rõ ràng, sơn lại rất đẹp. Sẽ giới thiệu cho hàng xóm!"</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar">TH</div>
-            <div>
-              <strong>Anh Trần Hùng</strong>
-              <span>Quận Gò Vấp</span>
+        <div class="rating-bars">
+          <div class="rating-bar-row"><span>5 ⭐</span><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div><span class="bar-pct">92%</span></div>
+          <div class="rating-bar-row"><span>4 ⭐</span><div class="bar-track"><div class="bar-fill" style="width:6%; background:#a3c4f3"></div></div><span class="bar-pct">6%</span></div>
+          <div class="rating-bar-row"><span>3 ⭐</span><div class="bar-track"><div class="bar-fill" style="width:2%; background:#d1d5db"></div></div><span class="bar-pct">2%</span></div>
+        </div>
+        <div class="rating-badges">
+          <div class="rating-badge"><i class="fa-brands fa-facebook-f"></i><span>4.9/5<small>Facebook</small></span></div>
+          <div class="rating-badge tt"><i class="fa-brands fa-tiktok"></i><span>5.0/5<small>TikTok</small></span></div>
+          <div class="rating-badge zl"><i class="fa-brands fa-rocketchat"></i><span>5.0/5<small>Zalo</small></span></div>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="tslider-wrap">
+        <button class="tslider-btn tslider-prev" id="tPrev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="tslider-viewport" id="tViewport">
+          <div class="tslider-track" id="tTrack">
+
+            <!-- Card 1 -->
+            <div class="tcard">
+              <div class="tcard-top">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <span class="review-source fb-source"><i class="fa-brands fa-facebook-f"></i></span>
+              </div>
+              <p class="tcard-text">"Gọi lúc 9 giờ tối, thợ đến trong 25 phút. Cửa kéo bị trật bánh xe, sửa xong trong 30 phút. Giá cả hợp lý, rất hài lòng!"</p>
+              <div class="tcard-work">
+                <img src="images/gallery-keo-1.jpg" alt="Công trình" onerror="this.parentElement.style.display='none'"/>
+                <span><i class="fa-solid fa-screwdriver-wrench"></i> Sửa cửa kéo</span>
+              </div>
+              <div class="tcard-reviewer">
+                <div class="tavatar" style="background:linear-gradient(135deg,#667eea,#764ba2)">
+                  <img src="images/customer-1.jpg" alt="Nguyễn Lan" onerror="this.style.display='none'"/>
+                  <span>NL</span>
+                </div>
+                <div>
+                  <strong>Chị Nguyễn Lan</strong>
+                  <span><i class="fa-solid fa-location-dot"></i> Quận Bình Thạnh</span>
+                </div>
+                <div class="tcard-time">2 ngày trước</div>
+              </div>
             </div>
+
+            <!-- Card 2 -->
+            <div class="tcard">
+              <div class="tcard-top">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <span class="review-source tt-source"><i class="fa-brands fa-tiktok"></i></span>
+              </div>
+              <p class="tcard-text">"Cửa sắt nhà bị rỉ sét và không đóng được. Thợ đến xem, báo giá rõ ràng, sơn lại rất đẹp. Sẽ giới thiệu cho hàng xóm!"</p>
+              <div class="tcard-work">
+                <img src="images/gallery-sat-2.jpg" alt="Công trình" onerror="this.parentElement.style.display='none'"/>
+                <span><i class="fa-solid fa-screwdriver-wrench"></i> Sửa &amp; sơn cửa sắt</span>
+              </div>
+              <div class="tcard-reviewer">
+                <div class="tavatar" style="background:linear-gradient(135deg,#ff6b35,#e84118)">
+                  <img src="images/customer-2.jpg" alt="Trần Hùng" onerror="this.style.display='none'"/>
+                  <span>TH</span>
+                </div>
+                <div>
+                  <strong>Anh Trần Hùng</strong>
+                  <span><i class="fa-solid fa-location-dot"></i> Quận Gò Vấp</span>
+                </div>
+                <div class="tcard-time">5 ngày trước</div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="tcard">
+              <div class="tcard-top">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <span class="review-source zl-source"><i class="fa-brands fa-rocketchat"></i></span>
+              </div>
+              <p class="tcard-text">"Cửa nhôm bị vỡ kính, thợ mang kính đến thay tại nhà luôn. Nhanh, gọn, bảo hành 6 tháng. Quá tuyệt vời!"</p>
+              <div class="tcard-work">
+                <img src="images/gallery-nhom-1.jpg" alt="Công trình" onerror="this.parentElement.style.display='none'"/>
+                <span><i class="fa-solid fa-screwdriver-wrench"></i> Thay kính cửa nhôm</span>
+              </div>
+              <div class="tcard-reviewer">
+                <div class="tavatar" style="background:linear-gradient(135deg,#11998e,#38ef7d)">
+                  <img src="images/customer-3.jpg" alt="Mai Hương" onerror="this.style.display='none'"/>
+                  <span>MH</span>
+                </div>
+                <div>
+                  <strong>Chị Mai Hương</strong>
+                  <span><i class="fa-solid fa-location-dot"></i> Quận Tân Bình</span>
+                </div>
+                <div class="tcard-time">1 tuần trước</div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="tcard">
+              <div class="tcard-top">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <span class="review-source fb-source"><i class="fa-brands fa-facebook-f"></i></span>
+              </div>
+              <p class="tcard-text">"Nhà tôi có 3 cửa kéo bị hư cùng lúc. Gọi thợ đến kiểm tra, báo giá trọn gói hợp lý. Làm xong trong buổi sáng, rất chuyên nghiệp!"</p>
+              <div class="tcard-work">
+                <img src="images/gallery-keo-2.jpg" alt="Công trình" onerror="this.parentElement.style.display='none'"/>
+                <span><i class="fa-solid fa-screwdriver-wrench"></i> Sửa 3 cửa kéo</span>
+              </div>
+              <div class="tcard-reviewer">
+                <div class="tavatar" style="background:linear-gradient(135deg,#f093fb,#f5576c)">
+                  <img src="images/customer-4.jpg" alt="Lê Văn Minh" onerror="this.style.display='none'"/>
+                  <span>LM</span>
+                </div>
+                <div>
+                  <strong>Anh Lê Văn Minh</strong>
+                  <span><i class="fa-solid fa-location-dot"></i> Quận 12</span>
+                </div>
+                <div class="tcard-time">2 tuần trước</div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="tcard">
+              <div class="tcard-top">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <span class="review-source zl-source"><i class="fa-brands fa-rocketchat"></i></span>
+              </div>
+              <p class="tcard-text">"Cửa sắt bị kẹt không kéo lên được, kẹt từ tối hôm trước. Sáng sớm 7h gọi là 7h30 đã có thợ. Thợ trẻ nhưng tay nghề rất cao!"</p>
+              <div class="tcard-work">
+                <img src="images/gallery-sat-1.jpg" alt="Công trình" onerror="this.parentElement.style.display='none'"/>
+                <span><i class="fa-solid fa-screwdriver-wrench"></i> Sửa cửa sắt cuốn</span>
+              </div>
+              <div class="tcard-reviewer">
+                <div class="tavatar" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">
+                  <img src="images/customer-5.jpg" alt="Phạm Thu Hà" onerror="this.style.display='none'"/>
+                  <span>PH</span>
+                </div>
+                <div>
+                  <strong>Chị Phạm Thu Hà</strong>
+                  <span><i class="fa-solid fa-location-dot"></i> Quận Thủ Đức</span>
+                </div>
+                <div class="tcard-time">3 tuần trước</div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="tcard">
+              <div class="tcard-top">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <span class="review-source tt-source"><i class="fa-brands fa-tiktok"></i></span>
+              </div>
+              <p class="tcard-text">"Thấy video trên TikTok nên gọi thử. Không ngờ thợ đến nhanh và làm đẹp hơn mong đợi! Cửa nhôm văn phòng giờ đóng mở rất êm."</p>
+              <div class="tcard-work">
+                <img src="images/gallery-nhom-2.jpg" alt="Công trình" onerror="this.parentElement.style.display='none'"/>
+                <span><i class="fa-solid fa-screwdriver-wrench"></i> Sửa cửa nhôm văn phòng</span>
+              </div>
+              <div class="tcard-reviewer">
+                <div class="tavatar" style="background:linear-gradient(135deg,#43e97b,#38f9d7)">
+                  <img src="images/customer-6.jpg" alt="Hoàng Duy" onerror="this.style.display='none'"/>
+                  <span>HD</span>
+                </div>
+                <div>
+                  <strong>Anh Hoàng Duy</strong>
+                  <span><i class="fa-solid fa-location-dot"></i> Quận Tân Phú</span>
+                </div>
+                <div class="tcard-time">1 tháng trước</div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="tcard">
+              <div class="tcard-top">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <span class="review-source fb-source"><i class="fa-brands fa-facebook-f"></i></span>
+              </div>
+              <p class="tcard-text">"Bản lề cửa sắt ban công bị gãy, sợ không an toàn. Thợ đến hàn lại chắc chắn, tư vấn thêm cách bảo dưỡng định kỳ. Rất tận tâm!"</p>
+              <div class="tcard-work">
+                <img src="images/gallery-sat-3.jpg" alt="Công trình" onerror="this.parentElement.style.display='none'"/>
+                <span><i class="fa-solid fa-screwdriver-wrench"></i> Hàn bản lề cửa sắt</span>
+              </div>
+              <div class="tcard-reviewer">
+                <div class="tavatar" style="background:linear-gradient(135deg,#fa709a,#fee140)">
+                  <img src="images/customer-7.jpg" alt="Trương Thị Bích" onerror="this.style.display='none'"/>
+                  <span>TB</span>
+                </div>
+                <div>
+                  <strong>Chị Trương Thị Bích</strong>
+                  <span><i class="fa-solid fa-location-dot"></i> Quận Bình Thạnh</span>
+                </div>
+                <div class="tcard-time">1 tháng trước</div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="tcard">
+              <div class="tcard-top">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <span class="review-source zl-source"><i class="fa-brands fa-rocketchat"></i></span>
+              </div>
+              <p class="tcard-text">"Gửi ảnh qua Zalo lúc 10h đêm, được tư vấn ngay. Sáng hôm sau thợ đến đúng giờ hẹn. Motor cửa kéo tự động sửa xong, chạy ngon như mới!"</p>
+              <div class="tcard-work">
+                <img src="images/gallery-keo-1.jpg" alt="Công trình" onerror="this.parentElement.style.display='none'"/>
+                <span><i class="fa-solid fa-screwdriver-wrench"></i> Sửa motor cửa tự động</span>
+              </div>
+              <div class="tcard-reviewer">
+                <div class="tavatar" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)">
+                  <img src="images/customer-8.jpg" alt="Ngô Minh Tuấn" onerror="this.style.display='none'"/>
+                  <span>NT</span>
+                </div>
+                <div>
+                  <strong>Anh Ngô Minh Tuấn</strong>
+                  <span><i class="fa-solid fa-location-dot"></i> Quận 7</span>
+                </div>
+                <div class="tcard-time">2 tháng trước</div>
+              </div>
+            </div>
+
+          </div><!-- /tslider-track -->
+        </div><!-- /tslider-viewport -->
+        <button class="tslider-btn tslider-next" id="tNext"><i class="fa-solid fa-chevron-right"></i></button>
+      </div><!-- /tslider-wrap -->
+
+      <!-- Dots -->
+      <div class="tslider-dots" id="tDots"></div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PROMO ===================== -->
+  <section class="promo-section" id="promo" aria-labelledby="promo-title">
+    <div class="promo-bg-shapes" aria-hidden="true">
+      <div class="promo-shape ps-1"></div>
+      <div class="promo-shape ps-2"></div>
+    </div>
+    <div class="container">
+
+      <!-- Badge + tiêu đề -->
+      <div class="promo-header">
+        <span class="promo-badge" id="js-promo-badge">🎉 KHUYẾN MÃI ĐẶC BIỆT</span>
+        <h2 id="promo-title" class="promo-title">Giảm Ngay 10% Cho Lần Sửa Đầu Tiên!</h2>
+        <p class="promo-subtitle" id="js-promo-subtitle">Áp dụng khi gọi điện hoặc nhắn tin Zalo – Nhắc mã khi liên hệ</p>
+      </div>
+
+      <div class="promo-body">
+
+        <!-- Cột trái: Đếm ngược + mã -->
+        <div class="promo-left">
+          <!-- Countdown -->
+          <div class="promo-countdown-wrap">
+            <p class="countdown-label"><i class="fa-solid fa-clock"></i> Ưu đãi kết thúc sau:</p>
+            <div class="promo-countdown" id="js-promo-countdown">
+              <div class="cd-block">
+                <span class="cd-num" id="cd-days">00</span>
+                <span class="cd-unit">Ngày</span>
+              </div>
+              <span class="cd-sep">:</span>
+              <div class="cd-block">
+                <span class="cd-num" id="cd-hours">00</span>
+                <span class="cd-unit">Giờ</span>
+              </div>
+              <span class="cd-sep">:</span>
+              <div class="cd-block">
+                <span class="cd-num" id="cd-mins">00</span>
+                <span class="cd-unit">Phút</span>
+              </div>
+              <span class="cd-sep">:</span>
+              <div class="cd-block">
+                <span class="cd-num" id="cd-secs">00</span>
+                <span class="cd-unit">Giây</span>
+              </div>
+            </div>
+            <div class="promo-expired-msg" id="js-promo-expired" style="display:none">
+              <i class="fa-solid fa-circle-exclamation"></i> Chương trình khuyến mãi đã kết thúc
+            </div>
+          </div>          <!-- Mã khuyến mãi – SCRATCH CARD -->
+          <div class="scratch-wrap">
+            <p class="promo-code-label">🎁 Cào để nhận mã giảm giá:</p>
+
+            <div class="scratch-card" id="js-scratch-card" aria-label="Cào để xem mã khuyến mãi">
+              <!-- Lớp nền: mã ẩn bên dưới -->
+              <div class="scratch-reveal" id="js-scratch-reveal">
+                <div class="scratch-code-inner">
+                  <span class="scratch-icon">🎉</span>
+                  <span class="scratch-code-text" id="js-promo-code">4647</span>
+                  <span class="scratch-label">Mã khuyến mãi</span>
+                </div>
+              </div>
+              <!-- Canvas cào phủ lên trên -->
+              <canvas class="scratch-canvas" id="js-scratch-canvas"
+                      aria-hidden="true" role="presentation"></canvas>
+              <!-- Hướng dẫn (ẩn khi đã cào) -->
+              <div class="scratch-hint" id="js-scratch-hint">
+                <i class="fa-solid fa-hand-pointer"></i>
+                <span>Cào vào đây</span>
+              </div>
+            </div>
+
+            <!-- Nút copy – hiện sau khi cào đủ -->
+            <div class="scratch-actions" id="js-scratch-actions" style="display:none">
+              <button class="promo-copy-btn" id="js-promo-copy" aria-label="Sao chép mã">
+                <i class="fa-regular fa-copy" id="js-copy-icon"></i>
+                <span id="js-copy-label">Sao chép mã</span>
+              </button>
+              <p class="promo-code-hint">👆 Dán mã vào Zalo hoặc đọc khi gọi điện</p>
+            </div>
+            <p class="scratch-sub-hint" id="js-scratch-sub-hint">👆 Dùng ngón tay hoặc chuột cào lớp bạc</p>
+          </div>
+
+          <!-- Nút hành động -->
+          <div class="promo-actions">
+            <a href="tel:0903614273" id="js-promo-phone" class="btn btn-promo-call pulse">
+              <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+              <span><small>Gọi ngay để dùng mã</small>0903 614 273</span>
+            </a>
+            <a href="https://zalo.me/0903614273" id="js-promo-zalo" target="_blank" rel="noopener" class="btn btn-promo-zalo">
+              <i class="fa-brands fa-rocketchat" aria-hidden="true"></i>
+              <span><small>Nhắn mã qua</small>Zalo</span>
+            </a>
           </div>
         </div>
-        <div class="testimonial-card">
-          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          <p>"Cửa nhôm phòng ngủ bị vỡ kính, thợ mang kính đến thay tại nhà luôn. Nhanh, gọn, bảo hành 6 tháng. Quá tuyệt vời!"</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar">MH</div>
-            <div>
-              <strong>Chị Mai Hương</strong>
-              <span>Quận Tân Bình</span>
-            </div>
+
+        <!-- Cột phải: Quyền lợi + discount badge -->
+        <div class="promo-right">
+          <div class="promo-discount-badge">
+            <span class="discount-off" id="js-promo-discount">10%</span>
+            <span class="discount-label">GIẢM NGAY</span>
           </div>
+          <ul class="promo-perks" id="js-promo-perks">
+            <!-- render từ JS -->
+          </ul>
+          <p class="promo-note" id="js-promo-note">* Áp dụng cho dịch vụ sửa cửa tại nhà. Không áp dụng cùng ưu đãi khác.</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- CTA SECTION -->
-  <section class="cta-section">
+  <!-- ===================== CTA ===================== -->
+  <section class="cta-section" id="contact">
     <div class="container cta-inner">
       <div class="cta-text">
         <h2>Cửa Nhà Bạn Đang Gặp Sự Cố?</h2>
         <p>Đừng chờ đợi! Gọi ngay để được hỗ trợ nhanh nhất – <strong>Có mặt sau 30 phút!</strong></p>
-      </div>
-      <div class="cta-actions">
-        <a href="tel:0903614273" class="btn btn-cta-primary pulse">
-          <i class="fa-solid fa-phone-volume"></i>
-          <span>
-            <small>Gọi Ngay Miễn Phí</small>
-            0903 614 273
-          </span>
+        <div class="cta-features">
+          <span><i class="fa-solid fa-check"></i> Miễn phí đến xem</span>
+          <span><i class="fa-solid fa-check"></i> Báo giá trước khi làm</span>
+          <span><i class="fa-solid fa-check"></i> Bảo hành tận nơi</span>
+        </div>
+      </div>      <div class="cta-actions">
+        <a href="tel:0903614273" id="js-cta-phone" class="btn btn-cta-primary pulse">
+          <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+          <span><small>Gọi Ngay Miễn Phí</small><span id="js-cta-phone-text">0903 614 273</span></span>
         </a>
-        <a href="https://zalo.me/0903614273" target="_blank" class="btn btn-cta-zalo">
-          <i class="fa-brands fa-facebook-messenger"></i>
-          <span>
-            <small>Nhắn Tin Ngay</small>
-            Inbox / Zalo
-          </span>
+        <a href="#" id="js-cta-zalo" target="_blank" rel="noopener" class="btn btn-cta-zalo">
+          <i class="fa-brands fa-rocketchat" aria-hidden="true"></i>
+          <span><small>Nhắn Tin Ngay</small>Inbox / Zalo</span>
+        </a>
+        <a href="#" id="js-cta-fb" target="_blank" rel="noopener" class="btn btn-cta-fb">
+          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          <span><small>Theo Dõi Ngay</small>Facebook</span>
         </a>
       </div>
     </div>
   </section>
+  <!-- ===================== GOOGLE MAPS ===================== -->
+  <section class="map-section" id="map">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-location-dot"></i> Khu Vực Phục Vụ</span>
+        <h2>Phục Vụ Toàn TP.HCM</h2>
+        <p class="section-desc">Đội thợ của chúng tôi luôn sẵn sàng đến tận nơi — nhanh nhất trong <strong>30 phút</strong></p>
+      </div>
 
-  <!-- FOOTER -->
+      <div class="map-wrapper">
+        <!-- CỘT TRÁI: thông tin địa chỉ & khu vực -->
+        <div class="map-info">
+          <div class="map-info-card">
+            <div class="map-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Trụ sở chính</h4>
+              <p>TP. Hồ Chí Minh, Việt Nam</p>
+            </div>
+          </div>
+          <div class="map-info-card">
+            <div class="map-info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Giờ hoạt động</h4>
+              <p>24/7 – Kể cả ngày lễ &amp; cuối tuần</p>
+            </div>
+          </div>
+          <div class="map-info-card">
+            <div class="map-info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Hotline</h4>
+              <p><a href="tel:0903614273">0903 614 273</a></p>
+            </div>
+          </div>          <div class="map-areas">
+            <h4><i class="fa-solid fa-map" aria-hidden="true"></i> Khu vực phủ sóng</h4>
+            <ul id="js-map-areas">
+              <!-- Tự động render từ config.js → SITE_CONFIG.serviceAreas -->
+            </ul>
+          </div>
+          <a href="tel:0903614273" id="js-map-phone" class="btn btn-primary map-call-btn">
+            <i class="fa-solid fa-phone-volume"></i> Gọi Ngay – 0903 614 273
+          </a>
+        </div>
+
+        <!-- CỘT PHẢI: Google Maps embed -->
+        <div class="map-embed-wrap">
+          <iframe
+            title="Bản đồ khu vực phục vụ TP.HCM"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501729.2892811637!2d106.42244195!3d10.7545408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zVGjDoG5oIHBobyBIbyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="map-overlay-badge">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Đến nơi trong<br/><strong>30 phút</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
         <div class="logo">
           <span class="logo-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
-          <span class="logo-text">SỬA CỬA <span>NHANH</span></span>
+          <div class="logo-text-wrap">
+            <span class="logo-text">CƠ KHÍ <strong>HAI TRUNG</strong></span>
+            <span class="logo-sub">Dịch vụ sửa cửa nhanh tại nhà TP.HCM</span>
+          </div>
         </div>
-        <p>Dịch vụ sửa cửa sắt, cửa kéo, cửa nhôm tại nhà. Uy tín – Nhanh chóng – Bảo hành đầy đủ.</p>
+        <p>Dịch vụ sửa cửa sắt, cửa kéo, cửa nhôm tại nhà. Uy tín – Nhanh chóng – Bảo hành đầy đủ.</p>        <div class="footer-socials">
+          <a href="#" id="js-footer-fb" target="_blank" rel="noopener" class="footer-social-btn fb" title="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="#" id="js-footer-tt" target="_blank" rel="noopener" class="footer-social-btn tt" title="TikTok">
+            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+          </a>
+          <a href="#" id="js-footer-zalo" target="_blank" rel="noopener" class="footer-social-btn zl" title="Zalo">
+            <i class="fa-brands fa-rocketchat" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
       <div class="footer-contact">
         <h4>Liên Hệ Ngay</h4>
-        <a href="tel:0903614273" class="footer-phone"><i class="fa-solid fa-phone"></i> 0903 614 273</a>
-        <p><i class="fa-solid fa-clock"></i> Phục vụ 24/7, kể cả ngày lễ</p>
-        <p><i class="fa-solid fa-location-dot"></i> Phục vụ toàn TP.HCM</p>
+        <a href="tel:0903614273" id="js-footer-phone" class="footer-phone">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i> <span id="js-footer-phone-text">0903 614 273</span>
+        </a>
+        <p><i class="fa-solid fa-clock" aria-hidden="true"></i> <span id="js-footer-hours">Phục vụ 24/7, kể cả ngày lễ</span></p>
+        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Phục vụ toàn TP.HCM</p>
+        <p><i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          <a href="#" id="js-footer-fb-link" target="_blank" rel="noopener">Facebook Fanpage</a>
+        </p>
+        <p><i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+          <a href="#" id="js-footer-tt-link" target="_blank" rel="noopener">TikTok Channel</a>
+        </p>
       </div>
       <div class="footer-services">
         <h4>Dịch Vụ</h4>
@@ -319,22 +1005,43 @@
           <li><i class="fa-solid fa-chevron-right"></i> Bảo trì định kỳ</li>
         </ul>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 Dịch Vụ Sửa Cửa Nhanh | Hotline: <a href="tel:0903614273">0903 614 273</a></p>
+    </div>    <div class="footer-bottom">
+      <p id="js-footer-copy">© 2026 Dịch Vụ Sửa Cửa Nhanh | Hotline: <a href="tel:0903614273">0903 614 273</a></p>
+      <div class="footer-bottom-socials">
+        <a href="#" id="js-footer-bottom-fb" target="_blank" rel="noopener" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" id="js-footer-bottom-tt" target="_blank" rel="noopener" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
     </div>
   </footer>
 
-  <!-- FLOATING CALL BUTTON -->
-  <div class="floating-buttons">
-    <a href="tel:0903614273" class="float-btn float-phone" title="Gọi ngay">
-      <i class="fa-solid fa-phone"></i>
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-buttons" role="complementary" aria-label="Liên hệ nhanh">
+    <a href="tel:0903614273" id="js-float-phone" class="float-btn float-phone pulse" aria-label="Gọi ngay">
+      <i class="fa-solid fa-phone" aria-hidden="true"></i>
       <span class="float-label">Gọi Ngay</span>
     </a>
-    <a href="https://zalo.me/0903614273" target="_blank" class="float-btn float-zalo" title="Zalo">
-      <i class="fa-brands fa-facebook-messenger"></i>
+    <a href="#" id="js-float-zalo" target="_blank" rel="noopener" class="float-btn float-zalo" aria-label="Nhắn tin Zalo">
+      <i class="fa-brands fa-rocketchat" aria-hidden="true"></i>
       <span class="float-label">Zalo</span>
     </a>
+    <a href="#" id="js-float-fb" target="_blank" rel="noopener" class="float-btn float-fb" aria-label="Facebook">
+      <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+    </a>
+    <a href="#" id="js-float-tt" target="_blank" rel="noopener" class="float-btn float-tt" aria-label="TikTok">
+      <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop" id="lightboxClose"></div>
+    <button class="lightbox-close-btn" id="lightboxCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt=""/>
+      <p id="lightboxCaption"></p>
+    </div>
   </div>
 
   <script src="script.js"></script>
