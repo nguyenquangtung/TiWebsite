@@ -67,10 +67,10 @@ const SITE_CONFIG = {
     title:       'Giảm Ngay 10% Cho Lần Sửa Đầu Tiên!',
     subtitle:    'Áp dụng khi gọi điện hoặc nhắn tin Zalo – Nhắc mã khi liên hệ',
     discount:    '10%',
-    code:        '4647',
+    code:        'TÙNG',
     note:        '* Áp dụng cho dịch vụ sửa cửa tại nhà. Không áp dụng cùng ưu đãi khác.',
     // Đếm ngược đến ngày nào — định dạng: 'YYYY-MM-DDTHH:mm:ss'
-    deadline:    '2026-04-30T23:59:59',
+    deadline:    '2026-05-30T23:59:59',
     perks: [
       { icon: 'fa-tag',           text: 'Giảm 10% tổng hóa đơn' },
       { icon: 'fa-truck-fast',    text: 'Miễn phí đến xem & kiểm tra' },
