@@ -59,23 +59,21 @@ const SITE_CONFIG = {
     'Quận 12, Thủ Đức',
     'Quận Bình Tân, Phú Nhuận',
     'Bình Dương, Đồng Nai (phụ phí xa)',
-  ],
-  /* ── KHUYẾN MÃI ──────────────────────────────────────── */
+  ],  /* ── KHUYẾN MÃI ──────────────────────────────────────── */
   promo: {
     enabled:     true,
-    badge:       '🎉 KHUYẾN MÃI ĐẶC BIỆT',
-    title:       'Giảm Ngay 10% Cho Lần Sửa Đầu Tiên!',
-    subtitle:    'Áp dụng khi gọi điện hoặc nhắn tin Zalo – Nhắc mã khi liên hệ',
-    discount:    '10%',
+    badge:       '🎖️ LỄ 30/4 – 1/5 · GIẢI PHÓNG SỰ CỐ CỬA',
+    title:       'Nghỉ Lễ Vui Trọn – Đừng Lo Cửa Hỏng!',
+    subtitle:    'Giảm 15% toàn bộ dịch vụ sửa cửa dịp lễ 30/4 – 1/5. Nhắc mã khi gọi hoặc nhắn Zalo.',
+    discount:    '15%',
     code:        'TÙNG',
-    note:        '* Áp dụng cho dịch vụ sửa cửa tại nhà. Không áp dụng cùng ưu đãi khác.',
-    // Đếm ngược đến ngày nào — định dạng: 'YYYY-MM-DDTHH:mm:ss'
-    deadline:    '2026-05-30T23:59:59',
+    note:        '* Áp dụng từ 28/4 – 02/5/2026. Không áp dụng cùng ưu đãi khác.',
+    deadline:    '2026-05-02T23:59:59',
     perks: [
-      { icon: 'fa-tag',           text: 'Giảm 10% tổng hóa đơn' },
+      { icon: 'fa-percent',       text: 'Giảm 15% toàn bộ dịch vụ' },
       { icon: 'fa-truck-fast',    text: 'Miễn phí đến xem & kiểm tra' },
       { icon: 'fa-shield-halved', text: 'Bảo hành 6 tháng tặng thêm' },
-      { icon: 'fa-star',          text: 'Ưu tiên lịch thợ buổi sáng' },
+      { icon: 'fa-star',          text: 'Ưu tiên thợ – có mặt 30 phút' },
     ],
   },
 
